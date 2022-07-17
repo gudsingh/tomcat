@@ -1,0 +1,17 @@
+---
+tomcat::deploy::tomcat_deploy_url:      'puppet:///modules/tomcat/sample.war'
+tomcat::deploy::tomcat_path:            '/usr/share/tomcat/webapps/sample'
+tomcat::deploy::tomcat_user:            'tomcat'
+tomcat::deploy::tomcat_group:           'tomcat'
+tomcat::index::environment:             'Quality Server'
+tomcat::index::deploy_samplewar_path:   '/usr/share/tomcat/webapps/sample'
+
+tomcat::install::tomcat_package:      'tomcat'
+tomcat::install::tomcat_package:      'tomcat-webapps'
+tomcat::config::tomcat_cfg_loaded:    '1'
+tomcat::config::tomcat_base:          '/var/lib/tomcats/'
+tomcat::config::java_home:            '/usr/lib/jvm/jre'
+tomcat::config::catalina_home:        '/usr/share/tomcat'
+tomcat::config::catalina_tmpdir:      '/var/cache/tomcat/temp'
+tomcat::config::java_opts:            '-Djavax.sql.DataSource.Factory=org.apache.commons.dbcp.BasicDataSourceFactory'
+tomcat::config::security_manager:     'false'
