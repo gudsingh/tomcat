@@ -3,7 +3,7 @@ tomcat::deploy::tomcat_deploy_url:      'puppet:///modules/tomcat/sample.war'
 tomcat::deploy::tomcat_path:            '/usr/share/tomcat/webapps/sample'
 tomcat::deploy::tomcat_user:            'tomcat'
 tomcat::deploy::tomcat_group:           'tomcat'
-tomcat::index::environment:             'Quality Server'
+tomcat::index::environment:             'development'
 tomcat::index::deploy_samplewar_path:   '/usr/share/tomcat/webapps/sample'
 
 tomcat::install::tomcat_package:      'tomcat'
